@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 50%;
+            height: 100%;
+            margin: 50px auto;
+            text-align: center;
+        }
+        img{
+            width: 500px;
+            height: auto;
+            object-fit: cover;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        button{
+            background-color: rgb(255, 81, 0);
+            border: none;
+            border-radius: 15px;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../images/Bird.jpg" alt="Bird Image"><br>
+        <button><a href="../images/Bird.jpg" download="">Download</a></button>
+    </div>
+</body>
+</html>

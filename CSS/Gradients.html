@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        body{
+            background-image: url('../images/rasia.jpg');
+            background-size: cover;
+        }
+        .contain{
+            width: 80%;
+            height: auto;
+            margin: 30px auto;
+            display: flex;
+            gap: 20px;
+        }
+        .div1{
+            flex: 1 1 200px;
+            height: 200px;
+        }
+        .bg{
+            width: 80%;
+            height: 500px;
+            margin: auto;
+        }
+
+        .linear{
+            background-image: linear-gradient(to top left, rgb(252, 73, 8), rgb(245, 212, 24), rgb(87, 182, 245));
+        }
+        .radial{
+            background-image: radial-gradient(circle,red, blue, green);
+        }
+
+        .linear2{
+            background-image: linear-gradient(
+                to right top,
+                rgba(5,25,55,0.9), rgba(0,77,122,0.9),
+                rgba(0,135,147,0.9), rgba(0,191,114,0.1),
+                rgba(168,235,18,0.9)
+            );
+            color: #ff0000;
+            font-size: 30px;
+        }
+
+        .linear3{
+            background-image: linear-gradient(
+                to left top,
+                #051937, #004d7a, #008793, #00bf72, #a8eb12
+            );
+            color: #000;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="linear div1">Linear Gradient</div>
+        <div class="radial div1">Radial Gradient</div>
+    </div>
+    <div class="linear2 bg">Linear Gradient</div> <br><br>
+    <div class="linear3 bg">Second Gradient</div>
+</body>
+</html>

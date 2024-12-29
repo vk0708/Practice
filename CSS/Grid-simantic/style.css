@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: cornflowerblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    background-color: antiquewhite;
+    grid-template-columns: 250px repeat(2, 1fr);
+    grid-template-rows: 100px 2fr 1fr 100px;
+}
+
+.item{
+    background-color: rgb(241, 175, 175);
+}
+
+.header{
+    background-color: #F75454;
+    grid-area: 1/1/2/5;
+}
+
+.sidebar{
+    background-color: #03939A;
+    grid-area: 2/1/4/2;
+}
+
+.main{
+    background-color: #4F6DF7;
+    grid-area: 2/2/3/5;
+}
+
+.content{
+    background-color: #F7B856;
+    grid-area: 3/2/4/5;
+}
+
+.footer{
+    background-color: #6F6F6F;
+    grid-area: 4/1/5/5;
+}

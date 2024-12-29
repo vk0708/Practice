@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>            
+        .contain{
+            width: 80%;
+            height: auto;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .div1{
+            width: 50%;
+            height: 300px;
+            margin: auto;
+            box-shadow: 10px 10px 25px 3px #426bf1;
+            /* filter: drop-shadow(10px 10px 3px red); */
+        }
+        body{
+            background-image: url("../images/rasia.jpg");
+            background-size: cover;
+            background-position: center center;
+            /* filter: blur(20px); */
+        }
+        
+        .div2{
+            width: 50%;
+            height: 300px;
+            margin: auto;
+            background-image: url('../images/bg1.jpg');
+            background-size: cover;
+            filter: blur(5px);
+            position: relative;
+        }
+        .linear{
+            background-image: linear-gradient(to top left, rgb(252, 73, 8), rgb(245, 212, 24), rgb(87, 182, 245));
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="linear div1">Linear Gradient</div>
+        <div class="div2">
+            <div class="sp"><h2>Blur Background</h2></div>
+        </div>
+    </div>
+</body>
+</html>

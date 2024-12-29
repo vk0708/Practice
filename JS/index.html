@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+<body>
+    <h1>See you in Console</h1>
+    <button onclick="alert('External JS Called')">Click me to see inline</button>
+    <button onclick="onClk()">Click me to see internal</button><br>
+    <button onclick="onClk1()">Click me to see External</button>
+
+    <script>
+        function onClk(){
+            alert("Internal JS Called")
+        }
+    </script>
+
+    <script src="intro.js"></script>
+</body>
+</html>

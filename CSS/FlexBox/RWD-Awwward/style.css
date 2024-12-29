@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body #content{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #E1E2E3;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: 550;
+    letter-spacing: 2px;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.s1{
+    color: #3C948B;
+}
+
+.links{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.links li{
+    list-style: none;
+    border-right: 2px solid #E1E2E3;
+}
+
+.links a{
+    font-size: 13px;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #676766;
+}.links a:hover{
+    background-color: #3C948B;
+    color: #fff;
+}
+
+.links .current{
+    font-weight: 600 ;
+}
+
+button, .sub{
+    padding: 21px 20px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #3C948B;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s scale linear;
+}.sub:hover{
+    scale: 1.1;
+}
+
+.s2{
+    padding: 19px 20px;
+    background-color: #343434;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.4s scale ease-in-out;
+}.s2:hover{
+    scale: 1.1;
+}
+
+.container{
+    height: auto;
+    width: 80%;
+    margin: 25px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flex-item{
+    background-color: #3C948B;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: 250px;
+}
+
+.img-1{
+    width: 208px;
+    height: 170px;
+    background-image: url('https://lh7-us.googleusercontent.com/h1W85-aqr2ywOBY5MjyZDsH_w96Cw8v_yBAVJ4nMXOygmBFCt-AN5Y7dYrgvGWPLVR4lDqeSa258Tawzp8xQPb1uinPbWD_Q2i0RWVqgfh2Zo99GOsGB-LjjPRvgjTvSSCQ8sU92sjzLtWzWin-fBQ');
+    background-size: cover;
+}
+
+h3{
+    font-size: 17px;
+    padding: 8px 0px;
+}
+
+.flex-item a{
+    text-decoration: none;
+    color: #3C948B;
+}
+h6{
+    padding: 4px 0px;
+
+}

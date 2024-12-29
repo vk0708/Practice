@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor States</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            color: green;
+        }
+        a:active{
+            color: orange;
+        }
+
+        .btn{
+            text-decoration: none;
+        }
+        .btn:hover{
+            color: green;
+            background-color: red;
+        }
+        .btn:active{
+            color: orange;
+            background-color: cornflowerblue;
+        }
+
+        .spn{
+            display: block;
+        }
+        div{
+            display: inline;
+        }
+
+        .inl-blk{
+            background-color: brown;
+            color: aliceblue;
+            display: inline-block;
+            width: 50%;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h2>HTML Forms</h2>
+
+<form action="#">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Vaibhav"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Kale"><br><br>
+  <a href="#">Submit</a> |
+  <a href="#">Reset</a>
+  <br><input type="button" value="Submit" class="btn">
+</form> 
+
+<p>If you click the "Submit" button Anchor states will perform
+</p>
+
+<span class="spn">I am Span and i want to become div</span>
+<label for="" style="color: red;">End</label>
+<div>I am div and i want to become span</div>
+<label for="" style="color: red;">End</label><br>
+<span class="inl-blk">Iam Span</span>
+</body>
+</html>
